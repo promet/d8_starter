@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fdcde3d332395758e3e11845cd7f7378",
+    "content-hash": "ef843039a81380959ffb8e67b7cb89a5",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3891,8 +3891,7 @@
                 "source": "http://git.drupal.org/project/search_api_solr.git",
                 "issues": "https://www.drupal.org/project/issues/search_api_solr",
                 "chat": "https://drupalchat.me/channel/search"
-            },
-            "time": "2020-07-29T12:58:26+00:00"
+            }
         },
         {
             "name": "drupal/token",
@@ -4568,6 +4567,61 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "kporras07/composer-symlinks",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kporras07/composer-symlinks.git",
+                "reference": "cda2e2059646b06a490092893563af5b70b569bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kporras07/composer-symlinks/zipball/cda2e2059646b06a490092893563af5b70b569bd",
+                "reference": "cda2e2059646b06a490092893563af5b70b569bd",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/filesystem": "^2.5 || ^3.0 || ^4.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0",
+                "phpunit/phpunit": "^5.5",
+                "vanio/coding-standards": "^0.1@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kporras07\\ComposerSymlinks\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Porras",
+                    "email": "kporras07@gmail.com"
+                }
+            ],
+            "description": "Composer script handling symlinks",
+            "homepage": "https://github.com/kporras07/composer-symlinks",
+            "keywords": [
+                "composer",
+                "script",
+                "symlink"
+            ],
+            "time": "2020-05-08T00:09:07+00:00"
         },
         {
             "name": "laminas/laminas-diactoros",
@@ -11565,7 +11619,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/entity_staging": 15
+        "drupal/entity_staging": 15,
+        "kporras07/composer-symlinks": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
