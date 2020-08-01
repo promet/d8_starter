@@ -45,6 +45,7 @@
         "drupal/search_api_solr": "^4.2",
         "drupal/twig_tweak": "^2.5",
         "drush/drush": "^9.0.0",
+        "kporras07/composer-symlinks": "dev-master",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
@@ -105,8 +106,7 @@
             "src/themes": "docroot/themes/custom",
             "src/profiles": "docroot/profiles/custom",
             "src/libraries": "docroot/libraries/custom",
-            "src/sites": "docroot/sites",
-            "docroot/themes/custom/countyoc/images": "docroot/images"
+            "src/sites": "docroot/sites"
         },
         "patches": {
             "drupal/devel": {
