@@ -1,0 +1,38 @@
+language: php
+dist: bionic
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
+
+before_install:
+  # turn off XDebug for speed up
+  - phpenv config-rm xdebug.ini || return 0
+
+php:
+  - '7.4'
+
+services:
+  - docker
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+addons:
+  hosts:
+    - gao.ddev.site
+
+before_script:
+  - sudo bash scripts/install-ddev.sh
+  - sudo ln -s ~/build/promet/starter_repo/ddev /usr/local/bin/ddev
+  - ddev exec drush 
+
+jobs:
+  fast_finish: true
+  include:
+    -
+      stage: Tests
+      script:
+        - ddev behat 

@@ -17,6 +17,7 @@ The goal for this project is to be a "starter" project for Promet Projects.
 | Deployment | artifact creation |
 |  | |
 | Drupal Tools | |
+| | memcache |
 | | drush |
 | | drupal console |
 | | environment switching |
@@ -28,11 +29,12 @@ The goal for this project is to be a "starter" project for Promet Projects.
 |-----| ----------- |
 | Testing | visual regression |
 | | cypress tests |
+| Drupal Tools | |
+| | redis for pantheon |
 | Deployment |  |
 |  | terminus integration |
 |  | single command to deploy to pantheon |
 |  | single command to deploy to acquia |
-
 
 ## Local Development
 
