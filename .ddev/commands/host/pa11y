@@ -1,0 +1,5 @@
+#!/bin/bash
+
+## Description: Runs pa11y tests.
+
+ddev exec -s pa11y pa11y-ci --config /workspace/wcag2-config.json

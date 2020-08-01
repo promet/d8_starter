@@ -1,0 +1,50 @@
+staging_directory: ../config/content
+entity_types:
+  block_content:
+    enable: 0
+    bundles:
+      basic: 0
+  comment:
+    enable: 0
+    bundles:
+      comment: 0
+  contact_message:
+    enable: 0
+    bundles:
+      feedback: 0
+      personal: 0
+  file:
+    enable: 1
+  media:
+    enable: 1
+    bundles:
+      audio: 0
+      document: 0
+      image: 1
+      remote_video: 0
+      video: 0
+  menu_link_content:
+    enable: 0
+    bundles:
+      menu_link_content: 0
+  node:
+    enable: 1
+    bundles:
+      article: 1
+      page: 1
+  path_alias:
+    enable: 1
+  redirect:
+    enable: 0
+    bundles:
+      redirect: 0
+  shortcut:
+    enable: 0
+    bundles:
+      default: 0
+  taxonomy_term:
+    enable: 1
+    bundles:
+      tags: 1
+  user:
+    enable: 0

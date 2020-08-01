@@ -55,18 +55,3 @@
  * @see \Drupal\Core\DrupalKernel::getSitePath()
  * @see https://www.drupal.org/documentation/install/multi-site
  */
-
-$sites['ocpl.oc-multi.docksal'] = 'ocpl';
-$sites['ocpl.oc.dev.acquia.prometdev.com'] = 'ocpl';
-$sites['ocpl.oc.stage.acquia.prometdev.com'] = 'ocpl';
-$sites['ocpl.oc.prod.acquia.prometdev.com'] = 'ocpl';
-
-$sites['ocread.oc-multi.docksal'] = 'ocread';
-$sites['ocread.oc.dev.acquia.prometdev.com'] = 'ocread';
-$sites['ocread.oc.stage.acquia.prometdev.com'] = 'ocread';
-$sites['ocread.oc.prod.acquia.prometdev.com'] = 'ocread';
-
-$sites['ocwr.oc-multi.docksal'] = 'ocwr';
-$sites['ocwr.oc.dev.acquia.prometdev.com'] = 'ocwr';
-$sites['ocwr.oc.stage.acquia.prometdev.com'] = 'ocwr';
-$sites['ocwr.oc.prod.acquia.prometdev.com'] = 'ocwr';

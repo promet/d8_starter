@@ -1,0 +1,37 @@
+{
+    "path_alias": [
+        {
+            "id": [
+                {
+                    "value": 1
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "86fcbf73-94d6-4c96-b5f9-a77ee56eea6a"
+                }
+            ],
+            "revision_id": [
+                {
+                    "value": 1
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "path": [],
+            "alias": [
+                {
+                    "value": "\/test-article"
+                }
+            ],
+            "status": [
+                {
+                    "value": true
+                }
+            ]
+        }
+    ]
+}

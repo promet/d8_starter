@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  pa11y:
+    labels:
+      com.ddev.site-name: ${DDEV_SITENAME}
+      com.ddev.approot: $DDEV_APPROOT
+    image: drydockcloud/ca-pa11y:0.1 
+    command: tail -f /dev/null
+    external_links:
+      - "ddev-router:${DDEV_SITENAME}.${DDEV_TLD}"
+    volumes:
+       - ${PWD}/tests/pa11y/wcag2-config.json:/workspace/wcag2-config.json

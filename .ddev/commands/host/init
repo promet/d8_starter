@@ -1,0 +1,39 @@
+#!/bin/bash
+
+## Description: Initiate project
+
+SKIP_DB=false
+SKIP_FILES=true
+
+while :; do
+     case $1 in
+         -h|-\?|--help)
+             show_help
+             exit
+             ;;
+         -sdb|--skip-db)
+             SKIP_DB=true
+             ;;
+         -f|--files)
+             SKIP_FILES=false
+             ;;
+         --)
+             shift
+             break
+             ;;
+         -?*)
+             printf 'WARN: Unknown option (ignored): %s\n' "$1" >&2
+             ;;
+         *)
+             break
+     esac
+ 
+     shift
+done
+
+ddev composer install
+
+ddev exec drush si -y
+ddev exec drush config-set system.site uuid 1fe45f25-bd70-4e1c-a0d9-88594a99a5ea
+ddev exec drush cim -y
+ddev test-content

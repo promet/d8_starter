@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+drush update-migration-config
+drush migrate:import --group=entity_staging -l $1

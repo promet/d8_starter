@@ -1,0 +1,67 @@
+{
+    "file": [
+        {
+            "fid": [
+                {
+                    "value": 1
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "25cbd70a-9366-4021-be90-5ef97f06dd14"
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "0f41511b-ef6f-49fe-984b-01db0bac056c",
+                    "url": "\/user\/1"
+                }
+            ],
+            "filename": [
+                {
+                    "value": "IMG_8267.JPG"
+                }
+            ],
+            "uri": [
+                {
+                    "value": "public:\/\/2020-08\/IMG_8267.JPG",
+                    "url": "\/sites\/default\/files\/2020-08\/IMG_8267.JPG"
+                }
+            ],
+            "filemime": [
+                {
+                    "value": "image\/jpeg"
+                }
+            ],
+            "filesize": [
+                {
+                    "value": 1969778
+                }
+            ],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-08-01T01:55:43+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-08-01T01:55:57+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ]
+        }
+    ]
+}

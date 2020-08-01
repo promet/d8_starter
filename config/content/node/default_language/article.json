@@ -1,0 +1,143 @@
+{
+    "node": [
+        {
+            "nid": [
+                {
+                    "value": 1
+                }
+            ],
+            "uuid": [
+                {
+                    "value": "4da92105-adfe-43c9-abdc-d60709e723a7"
+                }
+            ],
+            "vid": [
+                {
+                    "value": 2
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "type": [
+                {
+                    "target_id": "article",
+                    "target_type": "node_type",
+                    "target_uuid": "40416159-3099-4896-99ac-e3a450d017a2"
+                }
+            ],
+            "revision_timestamp": [
+                {
+                    "value": "2020-08-01T02:00:25+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "revision_uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "0f41511b-ef6f-49fe-984b-01db0bac056c",
+                    "url": "\/user\/1"
+                }
+            ],
+            "revision_log": [],
+            "status": [
+                {
+                    "value": true
+                }
+            ],
+            "uid": [
+                {
+                    "target_id": 1,
+                    "target_type": "user",
+                    "target_uuid": "0f41511b-ef6f-49fe-984b-01db0bac056c",
+                    "url": "\/user\/1"
+                }
+            ],
+            "title": [
+                {
+                    "value": "Test Article"
+                }
+            ],
+            "created": [
+                {
+                    "value": "2020-08-01T01:54:33+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "2020-08-01T02:00:25+00:00",
+                    "format": "Y-m-d\\TH:i:sP"
+                }
+            ],
+            "promote": [
+                {
+                    "value": true
+                }
+            ],
+            "sticky": [
+                {
+                    "value": false
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": true
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": true
+                }
+            ],
+            "path": [
+                {
+                    "alias": "\/test-article",
+                    "pid": 1,
+                    "langcode": "en"
+                }
+            ],
+            "body": [
+                {
+                    "value": "<p>This will test how articles can do.<\/p>\r\n",
+                    "format": "basic_html",
+                    "processed": "<p>This will test how articles can do.<\/p>",
+                    "summary": ""
+                }
+            ],
+            "comment": [
+                {
+                    "status": 2,
+                    "cid": 0,
+                    "last_comment_timestamp": 1596246957,
+                    "last_comment_name": null,
+                    "last_comment_uid": 1,
+                    "comment_count": 0
+                }
+            ],
+            "field_image": [
+                {
+                    "target_id": 1,
+                    "alt": "Seguin",
+                    "title": "",
+                    "width": 3072,
+                    "height": 2048,
+                    "target_type": "file",
+                    "target_uuid": "25cbd70a-9366-4021-be90-5ef97f06dd14",
+                    "url": "http:\/\/starter-repo.ddev.site\/sites\/default\/files\/2020-08\/IMG_8267.JPG"
+                }
+            ],
+            "field_tags": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "82c5af6a-e34e-42bd-9923-e1764e7e1657",
+                    "url": "\/taxonomy\/term\/1"
+                }
+            ]
+        }
+    ]
+}

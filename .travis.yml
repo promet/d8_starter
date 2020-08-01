@@ -36,3 +36,4 @@ jobs:
       stage: Tests
       script:
         - ddev behat 
+        # - ddev pa11y works but fails with bartik

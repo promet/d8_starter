@@ -70,8 +70,4 @@ if (getenv('MEMCACHE_ENABLED'))  {
   $settings['cache']['default'] = 'cache.backend.memcache';
 }
 
-$settings['locale_custom_strings_en']['Address label'] = [
-  'Company' => 'Name',
-];
-
 $settings['update_free_access'] = FALSE;
