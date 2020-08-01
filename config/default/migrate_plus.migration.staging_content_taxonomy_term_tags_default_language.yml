@@ -1,0 +1,66 @@
+uuid: e43219c6-8261-43b3-a140-d0d9dfbfb0f8
+langcode: en
+status: true
+dependencies: {  }
+id: staging_content_taxonomy_term_tags_default_language
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - entity_staging
+migration_group: entity_staging
+label: 'Import Taxonomy term Tags default_language'
+source:
+  plugin: entity_staging_json
+  input_path: /var/www/html/config/content/taxonomy_term/default_language/tags.json
+process:
+  langcode:
+    plugin: get
+    source: langcode
+    language: '@langcode'
+  vid: vid
+  revision_created:
+    plugin: callback
+    callable: strtotime
+    source: revision_created
+  revision_user: revision_user
+  revision_log_message: revision_log_message
+  status:
+    plugin: get
+    source: status
+    language: '@langcode'
+  name:
+    plugin: get
+    source: name
+    language: '@langcode'
+  description:
+    plugin: get
+    source: description
+    language: '@langcode'
+  weight: weight
+  parent:
+    plugin: migration_lookup
+    migration: staging_content_taxonomy_term_tags_default_language
+    source: parent
+  changed:
+    plugin: callback
+    callable: strtotime
+    source: changed
+    language: '@langcode'
+  default_langcode:
+    plugin: get
+    source: default_langcode
+    language: '@langcode'
+  revision_default: revision_default
+  revision_translation_affected:
+    plugin: get
+    source: revision_translation_affected
+    language: '@langcode'
+  path:
+    plugin: get
+    source: path
+    language: '@langcode'
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies:
+  required: {  }

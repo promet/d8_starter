@@ -7,7 +7,7 @@ CURRENT_TAG=`git name-rev --tags --name-only $(git rev-parse HEAD)`
 
 prep ()
 {
-  git remote add github https://${GH_TOKEN}@github.com/promet/provus.git 
+  git remote add github https://${GH_TOKEN}@github.com/promet/starter_repo.git 
 }
 
 quiet_git() {

@@ -1,0 +1,99 @@
+uuid: fc8988f5-1c46-44f8-a9f2-56623c001a5d
+langcode: en
+status: true
+dependencies: {  }
+id: staging_content_node_article_default_language
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - entity_staging
+migration_group: entity_staging
+label: 'Import Content Article default_language'
+source:
+  plugin: entity_staging_json
+  input_path: /var/www/html/config/content/node/default_language/article.json
+process:
+  langcode:
+    plugin: get
+    source: langcode
+    language: '@langcode'
+  type: type
+  revision_timestamp:
+    plugin: callback
+    callable: strtotime
+    source: revision_timestamp
+  revision_uid: revision_uid
+  revision_log: revision_log
+  status:
+    plugin: get
+    source: status
+    language: '@langcode'
+  uid:
+    plugin: get
+    source: uid
+    language: '@langcode'
+  title:
+    plugin: get
+    source: title
+    language: '@langcode'
+  created:
+    plugin: callback
+    callable: strtotime
+    source: created
+    language: '@langcode'
+  changed:
+    plugin: callback
+    callable: strtotime
+    source: changed
+    language: '@langcode'
+  promote:
+    plugin: get
+    source: promote
+    language: '@langcode'
+  sticky:
+    plugin: get
+    source: sticky
+    language: '@langcode'
+  default_langcode:
+    plugin: get
+    source: default_langcode
+    language: '@langcode'
+  revision_default: revision_default
+  revision_translation_affected:
+    plugin: get
+    source: revision_translation_affected
+    language: '@langcode'
+  path:
+    plugin: get
+    source: path
+    language: '@langcode'
+  menu_link:
+    plugin: get
+    source: menu_link
+    language: '@langcode'
+  body:
+    plugin: get
+    source: body
+    language: '@langcode'
+  comment:
+    plugin: get
+    source: comment
+    language: '@langcode'
+  field_image/target_id:
+    -
+      plugin: migration_lookup
+      migration: staging_content_file_file_default_language
+      source: field_image
+      language: '@langcode'
+  field_image/alt: field_image_alt
+  field_image/title: field_image_title
+  field_tags:
+    plugin: migration_lookup
+    migration: staging_content_taxonomy_term_tags_default_language
+    source: field_tags
+    language: '@langcode'
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required: {  }

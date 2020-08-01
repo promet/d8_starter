@@ -1,0 +1,25 @@
+uuid: 87965102-d566-4883-b1fe-c3be2f1fab1b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - starter
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: starter_branding
+theme: starter
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

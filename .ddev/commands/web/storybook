@@ -1,0 +1,10 @@
+#!/bin/bash
+
+## Description: runs storybook
+
+PROJECT_ROOT=/var/www/html
+THEME_NAME='starter';
+export PROJECT_ROOT
+export THEME_NAME
+cd ../.
+./scripts/bin/storybook.sh

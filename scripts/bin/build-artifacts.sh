@@ -1,7 +1,7 @@
 # Abort if anything fails
 set -e
 
-THEME_NAME='';
+THEME_NAME='starter';
 composer install --no-dev
 ${PROJECT_ROOT}/scripts/bin/build-theme.sh
 echo "Removing node modules"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "641308ed42d8056fb29dcab6a1abbfee",
+    "content-hash": "858460dcd94f56528852ed4b042bd1de",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4419,6 +4419,51 @@
                 "validator"
             ],
             "time": "2020-06-16T20:11:17+00:00"
+        },
+        {
+            "name": "emulsify-ds/emulsify-drupal",
+            "version": "v1.0.0-beta.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/emulsify-ds/emulsify-drupal.git",
+                "reference": "b74a7065af5e78a2fc34548ddca0440449111347"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/emulsify-ds/emulsify-drupal/zipball/b74a7065af5e78a2fc34548ddca0440449111347",
+                "reference": "b74a7065af5e78a2fc34548ddca0440449111347",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/components": "^1.0",
+                "drupal/emulsify_twig": "^1.0"
+            },
+            "type": "drupal-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Lewis",
+                    "email": "brian@fourkitchens.com"
+                },
+                {
+                    "name": "Chris Martin",
+                    "email": "chris.martin@fourkitchens.com"
+                },
+                {
+                    "name": "Evan Willhite",
+                    "email": "evan@fourkitchens.com"
+                },
+                {
+                    "name": "Randy Oest",
+                    "email": "randy@fourkitchens.com"
+                }
+            ],
+            "description": "Storybook development + Webpack Build + Drupal 8 theme",
+            "homepage": "http://emulsify.info",
+            "time": "2020-07-14T14:29:27+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -11756,6 +11801,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/entity_staging": 15,
+        "emulsify-ds/emulsify-drupal": 10,
         "kporras07/composer-symlinks": 20
     },
     "prefer-stable": true,
