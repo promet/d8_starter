@@ -41,7 +41,8 @@ jobs:
       script:
         - ddev behat 
         # We are running cypress locally for now.
-        - export CYPRESS_BASE_URL=VIRTUAL_HOST
+        - export CYPRESS_BASE_URL=http://`ddev exec printenv VIRTUAL_HOST`
+        - export PROJECT_ROOT=`printenv TRAVIS_BUILD_DIR`
         - env
         - ${TRAVIS_BUILD_DIR}/scripts/bin/install-cypress.sh
         - ${TRAVIS_BUILD_DIR}/scripts/bin/test-cypress.sh
