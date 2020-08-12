@@ -1,4 +1,5 @@
 {
+  "projectId": "starter",
   "env": {
     "cyAdminUser": "admin",
     "cyAdminPassword": "admin"
