@@ -34,7 +34,7 @@ Coming soon.
 
 ## Theme
 
-There is a starter theme for setup and testing. It is recommended to (install a new theme)[https://docs.emulsify.info/installation/design-system].
+There is a starter theme for setup and testing. It is recommended to [install a new theme](https://docs.emulsify.info/installation/design-system).
 
 To build the theme assets:
 
@@ -50,13 +50,13 @@ To run storybook:
 | Item | Description |
 |-----| ----------- |
 | Local development | ddev or docksal     |
-|     | single init command |
-|     | artifact building |
+|     | [single init command](https://github.com/promet/starter_repo#setting-up) |
+|     | artifact building  <ul><li>[theme](https://github.com/promet/starter_repo/blob/develop/scripts/bin/build-theme.sh)</li><li> [docroot](https://github.com/promet/starter_repo/blob/develop/scripts/bin/build-artifacts).sh</li></ul> |
 |    | single command to get database from hosting provider |
-| Testing | travis setup |
-| | behat tests |
-| | phpunit tests |
-| | pa11y tests|
+| Testing | [travis setup](https://github.com/promet/starter_repo/blob/develop/.travis.yml) |
+| | [behat tests](https://github.com/promet/starter_repo/blob/develop/tests/behat) |
+| | [cypress tests](https://github.com/promet/starter_repo/blob/develop/tests/cypress)|
+| | [pa11y tests](https://github.com/promet/starter_repo/blob/develop/tests/pa11y)|
 | Deployment | artifact creation |
 |  | |
 | Drupal Tools | |
@@ -71,15 +71,13 @@ To run storybook:
 | Item | Description |
 |-----| ----------- |
 | Testing | visual regression |
-| | cypress tests |
+| | phpunit tests |
 | Drupal Tools | |
 | | redis for pantheon |
 | Deployment |  |
 |  | terminus integration |
 |  | single command to deploy to pantheon |
 |  | single command to deploy to acquia |
-
-## Local Development
 
 
 
