@@ -1,7 +1,7 @@
 {
   "name": "promet-cypress",
   "scripts": {
-    "test": "cypress run -q --parallel --record"
+    "test": "cypress run -q"
   },
   "devDependencies": {
     "cypress": "^4.12.1"
