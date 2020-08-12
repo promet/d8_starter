@@ -1,0 +1,10 @@
+#!/bin/bash
+
+## Description: builds theme artifacts 
+
+PROJECT_ROOT=/var/www/html
+THEME_NAME='starter';
+export PROJECT_ROOT
+export THEME_NAME
+cd ../.
+./scripts/bin/build-theme.sh

@@ -33,7 +33,8 @@ done
 
 ddev composer install
 
-ddev exec drush si -y
-ddev exec drush config-set system.site uuid 1fe45f25-bd70-4e1c-a0d9-88594a99a5ea
+ddev exec drush si -y --account-pass=admin
+ddev exec drush config-set system.site uuid 1fe45f25-bd70-4e1c-a0d9-88594a99a5ea -y
 ddev exec drush cim -y
+ddev build-theme
 ddev test-content

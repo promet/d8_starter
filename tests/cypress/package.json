@@ -1,0 +1,9 @@
+{
+  "name": "promet-cypress",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^4.12.1"
+  }
+}
