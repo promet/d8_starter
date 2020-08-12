@@ -23,15 +23,14 @@ cache:
     - $TRAVIS_BUILD_DIR/test/cypress/node_modules
     - $TRAVIS_BUILD_DIR/src/themes/starter/node_modules
 
-addons:
-  hosts:
-    - gao.ddev.site
-
 before_script:
   - sudo bash scripts/bin/install-ddev.sh
   - sudo ln -s ${TRAVIS_BUILD_DIR}/ddev /usr/local/bin/ddev
   - ddev start -j
   - ddev init
+  - export PROJECT_ROOT=`printenv TRAVIS_BUILD_DIR`
+  - export CYPRESS_BASE_URL=http://`ddev exec printenv VIRTUAL_HOST`
+  - ${TRAVIS_BUILD_DIR}/scripts/bin/install-cypress.sh
 
 jobs:
   fast_finish: true
@@ -40,11 +39,7 @@ jobs:
       stage: Tests
       script:
         - ddev behat 
-        # We are running cypress locally for now.
-        - export CYPRESS_BASE_URL=http://`ddev exec printenv VIRTUAL_HOST`
-        - export PROJECT_ROOT=`printenv TRAVIS_BUILD_DIR`
-        - env
-        - ${TRAVIS_BUILD_DIR}/scripts/bin/install-cypress.sh
+        # We are running cypress natively for now so no ddev command.
         - ${TRAVIS_BUILD_DIR}/scripts/bin/test-cypress.sh
-        # works but fails with bartik
+        # works but fails with emulsify out of the box 
         # - ddev pa11y
