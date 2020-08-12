@@ -1,7 +1,49 @@
 # Promet Starter Repository
 
 [![Build Status](https://travis-ci.com/promet/starter_repo.svg?token=HV9JDWzMNPjpe56WpPzy&branch=develop)](https://travis-ci.com/promet/starter_repo)
+
 The goal for this project is to be a "starter" project for Promet Projects.
+
+## Setting up
+
+1. Install [ddev](https://ddev.readthedocs.io/en/stable/)
+2. ``ddev start``
+3. ``ddev init``
+
+## Testing
+
+Tests are in `/tests` folder.
+
+### Behat
+
+Run ``ddev behat``
+
+### Pa11y
+
+Run ``ddev pa11y``
+
+### Cypress
+
+Currently there is not a container for cypress. This will make it easier to use locally. To install cypress: ``cd tests/cypress; npm i``.
+
+To run cypress tests: ``cd tests/cypress; node_modules/.bin/cypress open`` to open the interactive test runner or ``cd tests/cypress; node_modules/.bin/cypress run`` to run all tests.
+
+### PHP Unit
+
+Coming soon.
+
+## Theme
+
+There is a starter theme for setup and testing. It is recommended to (install a new theme)[https://docs.emulsify.info/installation/design-system].
+
+To build the theme assets:
+
+``ddev build-theme``
+
+To run storybook:
+
+``ddev storybook``
+
 
 ## Assets
 
