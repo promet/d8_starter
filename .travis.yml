@@ -27,7 +27,7 @@ addons:
 before_script:
   - sudo bash scripts/bin/install-ddev.sh
   - sudo ln -s ${TRAVIS_BUILD_DIR}/ddev /usr/local/bin/ddev
-  - ddev exec drush 
+  - ddev start
 
 jobs:
   fast_finish: true
