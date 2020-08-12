@@ -19,6 +19,9 @@ services:
 cache:
   directories:
     - $HOME/.composer/cache
+    - $HOME/.cache
+    - $TRAVIS_BUILD_DIR/test/cypress/node_modules
+    - $TRAVIS_BUILD_DIR/src/themes/starter/node_modules
 
 addons:
   hosts:
@@ -37,4 +40,10 @@ jobs:
       stage: Tests
       script:
         - ddev behat 
-        # - ddev pa11y works but fails with bartik
+        # We are running cypress locally for now.
+        - export CYPRESS_BASE_URL=VIRTUAL_HOST
+        - env
+        - ${TRAVIS_BUILD_DIR}/scripts/bin/install-cypress.sh
+        - ${TRAVIS_BUILD_DIR}/scripts/bin/test-cypress.sh
+        # works but fails with bartik
+        # - ddev pa11y
