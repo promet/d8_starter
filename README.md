@@ -49,9 +49,9 @@ To run storybook:
 
 | Item | Description |
 |-----| ----------- |
-| Local development | ddev or docksal     |
+| Local development | [ddev](https://github.com/promet/starter_repo/blob/develop/.ddev) or docksal     |
 |     | [single init command](https://github.com/promet/starter_repo#setting-up) |
-|     | artifact building  <ul><li>[theme](https://github.com/promet/starter_repo/blob/develop/scripts/bin/build-theme.sh)</li><li> [docroot](https://github.com/promet/starter_repo/blob/develop/scripts/bin/build-artifacts).sh</li></ul> |
+|     | artifact building:  <ul><li>[theme](https://github.com/promet/starter_repo/blob/develop/scripts/bin/build-theme.sh)</li><li> [docroot](https://github.com/promet/starter_repo/blob/develop/scripts/bin/build-artifacts.sh)</li></ul> |
 |    | single command to get database from hosting provider |
 | Testing | [travis setup](https://github.com/promet/starter_repo/blob/develop/.travis.yml) |
 | | [behat tests](https://github.com/promet/starter_repo/blob/develop/tests/behat) |
