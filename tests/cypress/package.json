@@ -4,6 +4,10 @@
     "test": "cypress run -q"
   },
   "devDependencies": {
-    "cypress": "^4.12.1"
+    "cypress": "^4.12.1",
+    "cypress-cucumber-preprocessor": "^2.5.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
