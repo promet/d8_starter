@@ -7,7 +7,7 @@ To install:
 ```bash
 npm i
 export CYPRESS_BASE_URL="http://yourcurrenturl.ddev.site"
-``
+```
 
 To run, either:
 
