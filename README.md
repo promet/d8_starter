@@ -4,6 +4,19 @@
 
 The goal for this project is to be a "starter" project for Promet Projects.
 
+This project emphasizes:
+
+* Easy project setup
+* Easy test setup
+* Commands for asset creation and deployment
+
+This is a work in progress.
+
+## Similar projects
+
+* (Octane-CI)[https://github.com/phase2/octane-ci]
+* (Drupal Starter)[https://github.com/Gizra/drupal-starter]
+
 ## Setting up
 
 1. Install [ddev](https://ddev.readthedocs.io/en/stable/)
