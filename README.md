@@ -14,8 +14,8 @@ This is a work in progress.
 
 ## Similar projects
 
-* (Octane-CI)[https://github.com/phase2/octane-ci]
-* (Drupal Starter)[https://github.com/Gizra/drupal-starter]
+* [Octane-CI](https://github.com/phase2/octane-ci)
+* [Drupal Starter)(https://github.com/Gizra/drupal-starter)
 
 ## Setting up
 
