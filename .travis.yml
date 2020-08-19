@@ -43,3 +43,8 @@ jobs:
         - ${TRAVIS_BUILD_DIR}/scripts/bin/test-cypress.sh
         # works but fails with emulsify out of the box 
         # - ddev pa11y
+
+      stage: D8_Core_Update
+      if: branch = update
+      env: TRAVIS_EVENT_TYPE=cron
+        - echo "From D8_Core_Update"
