@@ -21,14 +21,3 @@ if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php') && getenv('
 if (file_exists($app_root . '/' . $site_path . '/settings.docksal.php') && getenv('IS_DOCKSAL_PROJECT') == TRUE) {
   include $app_root . '/' . $site_path . '/settings.docksal.php';
 }
-$databases['default']['default'] = array (
-  'database' => 'default',
-  'username' => 'user',
-  'password' => 'user',
-  'prefix' => '',
-  'host' => 'db',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['hash_salt'] = 'sfHaxdHt2z0inD0buAvvT0NDx8kG7KehhR8uEn1QcqKpI4o4pWkOuH-Eg3XbHcf1kLgXNe7yDw';
