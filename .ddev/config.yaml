@@ -1,4 +1,4 @@
-name: d8_starter 
+name: d8starter 
 type: drupal9
 docroot: docroot
 php_version: "7.3"
