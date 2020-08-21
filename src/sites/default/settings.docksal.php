@@ -1,14 +1,15 @@
 <?php
 
-assert_options(ASSERT_ACTIVE, TRUE);
-\Drupal\Component\Assertion\Handle::register();
+// @codingStandardsIgnoreFile
 
-// Workaround for permission issues with NFS shares
-$settings['file_chmod_directory'] = 0777;
-$settings['file_chmod_file'] = 0666;
-
-# File system settings.
-$config['system.file']['path']['temporary'] = '/tmp';
+// Docksal DB connection settings.
+$databases['default']['default'] = array (
+  'database' => 'default',
+  'username' => 'user',
+  'password' => 'user',
+  'host' => 'db',
+  'driver' => 'mysql',
+);
 
 // Reverse proxy configuration (Docksal vhost-proxy)
 if (PHP_SAPI !== 'cli') {
@@ -25,6 +26,3 @@ if (PHP_SAPI !== 'cli') {
 	}
 }
 
-if (file_exists($app_root . '/' . $site_path . '/services.local.yml')) {
-  $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.local.yml';
-}

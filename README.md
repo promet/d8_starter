@@ -19,6 +19,11 @@ This is a work in progress.
 
 ## Setting up
 
+1. Install [docksal](https://docksal.io/)
+2. ``fin init``
+
+OR
+
 1. Install [ddev](https://ddev.readthedocs.io/en/stable/)
 2. ``ddev start``
 3. ``ddev init``
@@ -29,11 +34,11 @@ Tests are in `/tests` folder.
 
 ### Behat
 
-Run ``ddev behat``
+Run ``fin/ddev behat``
 
 ### Pa11y
 
-Run ``ddev pa11y``
+Run ``fin/ddev pa11y``
 
 ### Cypress
 
@@ -51,12 +56,17 @@ There is a starter theme for setup and testing. It is recommended to [install a 
 
 To build the theme assets:
 
-``ddev build-theme``
+``ddev/fin build-theme``
 
 To run storybook:
 
-``ddev storybook``
+``ddev/fin storybook``
 
+## Fixtures
+
+This project uses [Entity staging](http://drupal.org/project/entity_staging) for fixtures. The fixtures are used for tests as well as test content. To install the fixtures run:
+
+``fin/ddev test-content``
 
 ## Assets
 

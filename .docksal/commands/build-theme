@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#: exec_target = cli
+
+## Builds theme dist files. Not currently necessary 
+##
+## Usage: fin build-theme 
+
+./scripts/bin/build-theme.sh
