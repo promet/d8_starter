@@ -1,4 +1,4 @@
-name: starter-repo
+name: d8_starter 
 type: drupal9
 docroot: docroot
 php_version: "7.3"
