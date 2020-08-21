@@ -1,0 +1,9 @@
+#!/bin/bash
+
+fin composer install
+
+fin drush si -y --account-pass=admin
+fin drush config-set system.site uuid 1fe45f25-bd70-4e1c-a0d9-88594a99a5ea -y
+fin drush cim -y
+fin build-theme
+fin test-content
