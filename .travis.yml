@@ -29,7 +29,7 @@ before_script:
   - ddev start -j
   - ddev init
   - export PROJECT_ROOT=`printenv TRAVIS_BUILD_DIR`
-  - export CYPRESS_BASE_URL=http://`ddev exec printenv VIRTUAL_HOST`
+  - CYPRESS_BASE_URL=http://`ddev exec printenv VIRTUAL_HOST`
   - export CYPRESS_BASE_URL=${CYPRESS_BASE_URL##*( )}
   - echo CYPRESS_BASE_URL
   - ${TRAVIS_BUILD_DIR}/scripts/bin/install-cypress.sh
