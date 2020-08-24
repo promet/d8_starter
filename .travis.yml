@@ -37,8 +37,7 @@ before_script:
 jobs:
   fast_finish: true
   include:
-    -
-      stage: Tests
+    - stage: Tests
       script:
         - ddev behat 
         # We are running cypress natively for now so no ddev command.
@@ -46,7 +45,10 @@ jobs:
         # works but fails with emulsify out of the box 
         # - ddev pa11y
 
-      stage: D8_Core_Update
+    - stage: D8_Core_Update
       if: branch = update
       env: TRAVIS_EVENT_TYPE=cron
         - echo "From D8_Core_Update"
+
+    - stage: end_stage
+      - echo "end_stage reached"
