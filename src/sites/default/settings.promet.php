@@ -93,7 +93,9 @@ if ($acquia_env) {
   }
 }
 elseif (getenv('MEMCACHE_ENABLED'))  {
+  $key = getenv('MEMCACHE_KEY') ?  getenv('MEMCACHE_KEY') : getenv('SITE_ENVIRONMENT');
   $settings['memcache']['servers'] = ['memcached:11211' => 'default'];
   $settings['memcache']['bins'] = ['default' => 'default'];
   $settings['cache']['default'] = 'cache.backend.memcache';
+  $settings['memcache']['key_prefix'] = $key;
 }
