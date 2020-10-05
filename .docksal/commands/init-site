@@ -59,7 +59,7 @@ site_install ()
 
 	echo-green "Installing Drupal..."
 	drush si minimal -y 
-  drush config-set system.site uuid 1aa3a078-6e7f-4336-b6d9-bec3b1e61561 -y
+  drush config-set system.site uuid 1fe45f25-bd70-4e1c-a0d9-88594a99a5ea -y
   drush cim -y
   drush uli
 }
