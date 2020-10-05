@@ -1,47 +1,21 @@
-language: php
 dist: bionic
 
-notifications:
-  email:
-    on_success: never
-    on_failure: never
+language: minimal
 
-before_install:
-  # turn off XDebug for speed up
-  - phpenv config-rm xdebug.ini || return 0
-
-php:
-  - '7.4'
-
-services:
-  - docker
-
-cache:
-  directories:
-    - $HOME/.composer/cache
-    - $HOME/.cache
-    - $TRAVIS_BUILD_DIR/test/cypress/node_modules
-    - $TRAVIS_BUILD_DIR/src/themes/starter/node_modules
+install:
+  ## Update 'get.docksal.io' curl fails from time to time. Added '-k' to ignore cert error.
+  ## ==> curl: (51) SSL: no alternative certificate subject name matches target host name 'get.docksal.io'
+  - curl -kfsSL https://get.docksal.io | bash
+  - fin update
+  - fin version
+  - fin sysinfo
 
 before_script:
-  - sudo bash scripts/bin/install-ddev.sh
-  - sudo ln -s ${TRAVIS_BUILD_DIR}/ddev /usr/local/bin/ddev
-  - ddev start -j
-  - ddev init
-  - export PROJECT_ROOT=`printenv TRAVIS_BUILD_DIR`
-  - CYPRESS_BASE_URL=http://`ddev exec printenv VIRTUAL_HOST`
-  - export CYPRESS_BASE_URL="http://d8starter.ddev.site"
-  - echo ${CYPRESS_BASE_URL}
-  - ${TRAVIS_BUILD_DIR}/scripts/bin/install-cypress.sh
+  - fin init
 
-jobs:
-  fast_finish: true
-  include:
-    -
-      stage: Tests
-      script:
-        - ddev behat 
-        # We are running cypress natively for now so no ddev command.
-        - ${TRAVIS_BUILD_DIR}/scripts/bin/test-cypress.sh
-        # works but fails with emulsify out of the box 
-        # - ddev pa11y
+script:
+  - fin test
+
+after_success:
+  - fin deploy
+

@@ -2,4 +2,4 @@
 
 source ${PROJECT_ROOT}/scripts/bin/env.sh
 
-cd ${PROJECT_ROOT}/tests/cypress; npm test 
+cd ${PROJECT_ROOT}/tests/cypress; npm install; npm test 

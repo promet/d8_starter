@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #: exec_target = cli
 
@@ -6,4 +6,4 @@
 ##
 ## Usage: fin build-theme 
 
-./scripts/bin/build-theme.sh
+${PROJECT_ROOT}/scripts/bin/build-theme.sh
