@@ -1,6 +1,6 @@
 # Promet Starter Repository
 
-[![Build Status](https://travis-ci.com/promet/starter_repo.svg?token=HV9JDWzMNPjpe56WpPzy&branch=develop)](https://travis-ci.com/promet/starter_repo)
+[![Build Status](https://travis-ci.com/promet/d8_starter.svg?branch=develop)](https://travis-ci.com/promet/d8_starter)
 
 The goal for this project is to be a "starter" project for Promet Projects.
 
