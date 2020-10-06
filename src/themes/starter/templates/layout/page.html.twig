@@ -62,10 +62,6 @@
     {{ messages }}
   {% endblock %}
 
-  {% block page_sidebar %}
-    {{ page.sidebar }}
-  {% endblock %}
-
   {% block page_content %}
     {{ page.content }}
   {% endblock %}
@@ -74,4 +70,8 @@
     {% if page.footer %}
       {{ page.footer }}
     {% endif %}
+  {% endblock %}
+
+  {% block page_sidebar %}
+    {{ page.sidebar }}
   {% endblock %}
