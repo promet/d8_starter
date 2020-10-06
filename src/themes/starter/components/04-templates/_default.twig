@@ -19,14 +19,14 @@
   {% endblock %}
   <div {{ bem(main_base_class, main_modifiers, main_blockname) }}>
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <main role="main" {{ bem(main_content_base_class, main_content_modifiers, main_content_blockname) }}>
+      {% block page_content %}{% endblock %}
+    </main>
     {% if sidebar %}
       <aside class="main-sidebar" role="complementary">
         {% block page_sidebar %}{% endblock %}
       </aside>
     {% endif %}
-    <main role="main" {{ bem(main_content_base_class, main_content_modifiers, main_content_blockname) }}>
-      {% block page_content %}{% endblock %}
-    </main>
   </div>
   {% block page_footer %}
     {% include "@organisms/site/site-footer/site-footer.twig" %}

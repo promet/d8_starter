@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Starts phpunit.
+# Starts storybook.
 
 source ${PROJECT_ROOT}/scripts/bin/env.sh
 

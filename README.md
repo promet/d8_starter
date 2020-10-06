@@ -1,6 +1,6 @@
 # Promet Starter Repository
 
-[![Build Status](https://travis-ci.com/promet/starter_repo.svg?token=HV9JDWzMNPjpe56WpPzy&branch=develop)](https://travis-ci.com/promet/starter_repo)
+[![Build Status](https://travis-ci.com/promet/d8_starter.svg?branch=develop)](https://travis-ci.com/promet/d8_starter)
 
 The goal for this project is to be a "starter" project for Promet Projects.
 
@@ -80,13 +80,14 @@ This project uses [Entity staging](http://drupal.org/project/entity_staging) for
 | | [behat tests](https://github.com/promet/starter_repo/blob/develop/tests/behat) |
 | | [cypress tests](https://github.com/promet/starter_repo/blob/develop/tests/cypress)|
 | | [pa11y tests](https://github.com/promet/starter_repo/blob/develop/tests/pa11y)|
-| Deployment | artifact creation |
-|  | |
+| Deployment | [artifact creation](https://github.com/promet/d8_starter/blob/develop/scripts/bin/build-artifacts) ``fin build-artifacts``|
+|  | [single deployment command for pantheon and acquia](https://github.com/promet/d8_starter/blob/develop/scripts/bin/deploy.sh) ``fin deploy``|
+|  | [terminus integration](https://github.com/promet/d8_starter/blob/develop/scripts/vendor/terminus) |
 | Drupal Tools | |
 | | memcache |
 | | drush |
-| | drupal console |
-| | environment switching |
+| | drupal console (included with docksal) |
+| | [environment switching](https://github.com/promet/d8_starter/blob/develop/scripts/bin/site-mode.sh) ``fin site-mode dev``|
 | | entity staging (for test content) |
 
 ## Desired Assets
@@ -97,10 +98,6 @@ This project uses [Entity staging](http://drupal.org/project/entity_staging) for
 | | phpunit tests |
 | Drupal Tools | |
 | | redis for pantheon |
-| Deployment |  |
-|  | terminus integration |
-|  | single command to deploy to pantheon |
-|  | single command to deploy to acquia |
 
 
 
